@@ -7,7 +7,7 @@
     <title>Admin Login | E Learning</title>
     <link rel="stylesheet" href="bootstrap.css"/> 
     <link rel="stylesheet" href="style.css"/>  
-    <link rel="icon" href="resource/logo.png"/>
+    <link rel="icon" href="resource/learning.png"/>
 </head>
 <body class="body">
      
@@ -30,26 +30,54 @@
                  </div> 
                  <hr/> 
                  <div class="col-12 ">
+                        <label class="form-label">First Name </label>
+                        <input type="text" class="form-control" placeholder="ex:- john" id="e" />
+                </div>
+            
+                 <div class="col-12 ">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="ex:- john" id="e" />
+                </div>
+                <div class="col-12 ">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="ex:- john@gmail.com" id="e" />
+                        <input type="email" class="form-control" placeholder="ex:- john@" id="e" />
+                </div>
+                
+                <div class="col-12 ">
+                        <label class="form-label">Mobile</label>
+                        <input type="text" class="form-control" placeholder="ex:- john" id="e" />
                 </div>
 
                 <div class="col-12 ">
                            <label class="form-label">Password</label>
-                           <input type="password" class="form-control" placeholder="ex:- **********" id="p" />
+                           <input type="password" class="form-control" placeholder="ex:- ****" id="p" />
                 </div> 
-                 
-                <div class="col-6">
+                <div class="col-12 ">
+                           <label class="form-label">Confirm Password</label>
+                           <input type="password" class="form-control" placeholder="ex:- ****" id="p" />
+                </div> 
+                  
+                <div class="col-12 ">
+                        <label class="form-label">Address Line 1</label>
+                        <input type="text" class="form-control" placeholder="ex:- john" id="e" />
+                </div> 
+                <div class="col-12 ">
+                        <label class="form-label">Address Line 2</label>
+                        <input type="text" class="form-control" placeholder="ex:- john" id="e" />
+                </div>
+
+                <!-- <div class="col-6">
                        <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="rememberme" />
                                     <label class="form-check-label">Remember Me</label>
-                       </div>
+                       </div> -->
                 </div>
-                <div class="col-6 text-end">
-                            <a href="#" class="link-dark" onclick="forgotPassword();">Forgot Password?</a>
-                </div>
+               
                 <div class="col-12  d-grid">
-                                <button class="btn btn-primary" onclick="adminVerification();">Sign In</button>
+                                <button class="btn btn-primary" onclick="adminVerification();">Sign Up</button>
+                </div>  
+                <div class="col-12  d-grid">
+                                <button class="btn btn-primary" onclick="adminVerification();">Back</button>
                 </div>  
 
                
