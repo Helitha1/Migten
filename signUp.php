@@ -9,7 +9,7 @@
     <title>Sign Up | Charity Donation</title>
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="resource/learning.png" />
+    <link rel="icon" href="resource/logo.png" />
 
 </head>
 
