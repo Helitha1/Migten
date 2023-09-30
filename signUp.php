@@ -1,66 +1,151 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> Sign up</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/fav.png">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | E Learning</title>
+    <link rel="stylesheet" href="bootstrap.css"/> 
+    <link rel="stylesheet" href="style.css"/>  
+    <link rel="icon" href="resource/learning.png"/>
 </head>
+<body class="body">
+     
+<div class="container-fluid vh-100 d-flex justify-content-center">
+   <div class="row align-content-center">
 
-<body>
-    <div class="container-fluid bg-login">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-12 login-card">
-                    <div class="row">
-                        <div class="col-md-5 detail-part">
-                            <h1>Awesome sign up Page Design</h1>
-                            <p>Please use your credentials to login. If you are not a member, please register. </p>
+      
+        <!-- content  -->
+         <div class="col-12 ">  
+            <div class="row p-3 ">  
+
+            <div class="col-6 d-none d-lg-block logo"></div>
+
+            <div class="col-12 col-lg-6 border-dark shadow-lg bg-transparent rounded-2"> 
+            <div class="row g-2 p-4"> 
+                 
+                     
+                 <div class="col-12 ">
+                     <p class="title02">Admin Login.</p>
+                 </div> 
+                 <hr/> 
+                 <div class="col-12 ">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="ex:- john@gmail.com" id="e" />
+                </div>
+
+                <div class="col-12 ">
+                           <label class="form-label">Password</label>
+                           <input type="password" class="form-control" placeholder="ex:- **********" id="p" />
+                </div> 
+                 
+                <div class="col-6">
+                       <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rememberme" />
+                                    <label class="form-check-label">Remember Me</label>
+                       </div>
+                </div>
+                <div class="col-6 text-end">
+                            <a href="#" class="link-dark" onclick="forgotPassword();">Forgot Password?</a>
+                </div>
+                <div class="col-12  d-grid">
+                                <button class="btn btn-primary" onclick="adminVerification();">Sign In</button>
+                </div>  
+
+               
+            </div>     
+
+            </div> 
+
+             
+            </div>
+             
+          
+         </div>
+         
+        <!-- content  -->
+         
+          
+        <!--  -->
+
+        <div class="modal" tabindex="-1" id="verificationModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Admin Verification</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="col-md-7 logn-part">
-                            <div class="row">
-                                <div class="col-lg-10 col-md-12 mx-auto">
-                                    <div class="logo-cover">
-                                        <img src="assets/images/logo.png" alt="">
-                                    </div>
-                                    <div class="form-cover">
-                                        <h6>Login Here</h6>
-                                        <input placeholder="Enter Firstname" type="text" class="form-control">
-                                        <input placeholder="Enter Lastname" type="text" class="form-control">
-                                        <input placeholder="Enter Mobile" type="text" class="form-control">
-                                        <input Placeholder="Enter PAssword" type="password" class="form-control">
-                                        <input Placeholder="Conferm PAssword" type="password" class="form-control">
-                                        <input placeholder="Enter Address Line 1" type="text" class="form-control">
-                                        <input placeholder="Enter Address Line 2" type="text" class="form-control">
-                                        <div class="row form-footer">
-                                            <!-- <div class="col-md-6 forget-paswd">
-                                                <a href="">Forget Password ?</a>
-                                            </div> -->
-                                            <div class="col-md-6 button-div">
-                                                <button class="btn btn-primary">Sign UP</button>
-                                                <button class="btn btn-primary">Back</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
+                        <div class="modal-body">
+                            <label class="form-label">Enter Your Verification Code</label>
+                            <input type="text" class="form-control" id="vcode">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="verify();">Verify</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+        <!--  -->
+
+        </div>  
+        
+         <!-- modal -->
+
+         <div class="modal" tabindex="-1" id="forgotPasswordModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Forgot Password</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="row g-3">
+
+                                <div class="col-6">
+                                    <label class="form-label">New Password</label>
+                                    <div class="input-group mb-3">
+                                        <input type="password" class="form-control" id="np"/>
+                                        <button class="btn btn-outline-secondary" type="button" id="npb" onclick="showPassword();">Show</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label class="form-label">Re-type Password</label>
+                                    <div class="input-group mb-3">
+                                        <input type="password" class="form-control" id="rnp"/>
+                                        <button class="btn btn-outline-secondary" type="button" id="rnpb" onclick="showPassword2();">Show</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label">Verification Code</label>
+                                    <input type="text" class="form-control" id="vc"/>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="resetPassword();">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal -->
+ 
+         
+     
     </div>
 
+  
+ </div>
+     
+ <script src="bootstrap.bundle.js"></script> 
+ <script src="script.js"></script> 
 </body>
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-
 </html>
