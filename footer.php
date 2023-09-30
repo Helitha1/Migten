@@ -15,7 +15,7 @@
 
 <body>
 
-    <footer class="text-white pb-2 pt-2" style="background-color: #effffd;">
+    <footer class="text-white pb-2 pt-2" style="background-color: #474a4e;">
 
         <div class="col-12 text-md-start">
 
@@ -23,8 +23,8 @@
 
                 <div class="col-12 col-md-3 col-lg-4 mx-auto ">
 
-                    <h5 class="text-uppercase mt-4 fw-bold text-black-50 text-uppercase">Charity Donation</h5>
-                    <p class="text-black">Here we CharityDonation.lk&trade;</p>
+                    <h5 class="text-uppercase mt-4 fw-bold text-white text-uppercase">Charity Donation</h5>
+                    <p class="text-white">Here we CharityDonation.lk&trade;</p>
 
                     <br/>
                     <br/>
