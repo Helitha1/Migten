@@ -32,19 +32,19 @@
                             </div>
                             <hr />
                             <div class="col-12 ">
-                                <label class="form-label">Email</label>
+                                <label class="form-label fw-bold">Email</label>
                                 <input type="email" class="form-control" placeholder="ex:- john@gmail.com" id="e" />
                             </div>
 
                             <div class="col-12 ">
-                                <label class="form-label">Password</label>
+                                <label class="form-label fw-bold">Password</label>
                                 <input type="password" class="form-control" placeholder="ex:- **********" id="p" />
                             </div>
 
                             <div class="col-6">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="rememberme" />
-                                    <label class="form-check-label">Remember Me</label>
+                                    <label class="form-check-label fw-bold">Remember Me</label>
                                 </div>
                             </div>
                             <div class="col-6 text-end">
