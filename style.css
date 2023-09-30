@@ -41,3 +41,35 @@
     background-position: center;
     background-repeat: no-repeat;
 } 
+ 
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("font/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("font/Roboto-Regular.ttf");
+}
+
+*{
+    font-family: "Quicksand";
+    font-size: 14px;
+}
+
+.title01{
+    font-family: "Roboto";
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+.title02{
+    font-size: 25px;
+    font-weight: bold;
+}
+.courser{
+
+   cursor: pointer;
+ 
+}  
+ 
