@@ -15,7 +15,11 @@
 
 <body>
 
+
     <footer class="text-white pb-2 pt-2" style="background-color: #474a4e;">
+
+    <footer class="text-white pb-2 pt-2" style="background-color: white;">
+
 
         <div class="col-12 text-md-start">
 
@@ -25,6 +29,10 @@
 
                     <h5 class="text-uppercase mt-4 fw-bold text-white text-uppercase">Charity Donation</h5>
                     <p class="text-white">Here we CharityDonation.lk&trade;</p>
+
+                    <h5 class="text-uppercase mt-4 fw-bold text-black-50 text-uppercase">Charity Donation</h5>
+                    <p class="text-black">Here we CharityDonation.lk&trade; Your donation can make a world of difference. Join us in our mission to change lives and create a brighter future for those in need.</p>
+
 
                     <br/>
                     <br/>
