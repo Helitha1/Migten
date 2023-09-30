@@ -88,7 +88,7 @@
                                 <button class="btn text-white" style="background-color: #543c4f;">Sign Up</button>
                             </div>
                             <div class="col-12 col-lg-6 d-grid my-3">
-                                <button class="btn btn-danger">Back</button>
+                                <button class="btn text-white" style="background-color: #f13451;">Back</button>
                             </div>
 
                         </div>
