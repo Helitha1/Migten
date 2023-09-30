@@ -31,7 +31,7 @@
 
 
                             <div class="col-12 ">
-                                <p class="title02 text-uppercase">Admin Login.</p>
+                                <p class="title02 text-uppercase">Sign Up</p>
                             </div>
                             <hr />
                             <div class="col-12 ">
