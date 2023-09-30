@@ -38,7 +38,10 @@
 
                             <div class="col-12 ">
                                 <label class="form-label fw-bold">Password</label>
-                                <input type="password" class="form-control" placeholder="ex:- **********" id="p" />
+                                <div class="input-group">
+                                    <input type="password" class="form-control fw-bold" placeholder="ex:- ****" id="p" />
+                                    <span class="input-group-text btn btn-dark" id="basic-addon2">Show</span>
+                                </div>
                             </div>
 
                             <div class="col-6">
