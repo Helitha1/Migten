@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Admin Login | E Learning</title>
+    <title>Sign Up | Charity Donation</title>
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="resource/learning.png" />
@@ -23,9 +23,6 @@
             <!-- content  -->
             <div class="col-12 ">
                 <div class="row p-3 ">
-
-
-
 
                     <div class="col-6 d-none d-lg-block logo"></div>
 
@@ -82,18 +79,21 @@
                             </div>
 
                             <!-- <div class="col-6">
-                       <div class="form-check">
+                            <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="rememberme" />
                                     <label class="form-check-label">Remember Me</label>
-                       </div> -->
+                            </div> -->
+
+                            <div class="col-12 col-lg-6 d-grid my-3">
+                                <button class="btn btn-primary">Sign Up</button>
+                            </div>
+                            <div class="col-12 col-lg-6 d-grid my-3">
+                                <button class="btn btn-danger">Back</button>
+                            </div>
+
                         </div>
 
-                        <div class="col-12 col-lg-6 d-grid my-3">
-                            <button class="btn btn-primary" onclick="adminVerification();">Sign Up</button>
-                        </div>
-                        <div class="col-12 col-lg-6 d-grid my-3">
-                            <button class="btn btn-danger" onclick="adminVerification();">Back</button>
-                        </div>
+
 
 
                     </div>
