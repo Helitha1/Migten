@@ -51,7 +51,7 @@
                                 <a href="#" class="link-dark" onclick="forgotPassword();">Forgot Password?</a>
                             </div>
                             <div class="col-12 col-lg-6 d-grid my-3">
-                                <button class="btn btn-primary"  style="background-color: #543c4f;">Sign In</button>
+                                <button class="btn text-white"  style="background-color: #543c4f;">Sign In</button>
                             </div>
                             <div class="col-12 col-lg-6 d-grid my-3">
                                 <button class="btn text-white" style="background-color: #f13451;">Sign Up</button>
