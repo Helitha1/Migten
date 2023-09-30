@@ -106,9 +106,13 @@
                 </div>
                 
 
-                <hr />
+                <hr style="background-color: #f13451;"/>
 
             </div>
+            <!-- <div class="col12
+            ">
+
+            </div> -->
 
         </div>
 
