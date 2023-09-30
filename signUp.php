@@ -101,7 +101,7 @@
                                 <button class="btn text-white shadow-lg" style="background-color: #543c4f;">Sign Up</button>
                             </div>
                             <div class="col-12 col-lg-6 d-grid my-3">
-                                <button class="btn text-white shadow-lg" style="background-color: #f13451;">Back</button>
+                                <button class="btn text-white shadow-lg" style="background-color: #f13451;">if you have an account? Sign In </button>
                             </div>
 
                         </div>
