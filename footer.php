@@ -15,7 +15,7 @@
 
 <body>
 
-    <footer class="text-white pb-2 pt-2" style="background-color: #effffd;">
+    <footer class="text-white pb-2 pt-2" style="background-color: white;">
 
         <div class="col-12 text-md-start">
 
