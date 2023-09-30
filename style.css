@@ -1,2 +1,43 @@
 
+:root{ 
 
+    --primary: hsla(240, 100%, 50% ,0.45) ; 
+    --yellow: rgba(255, 123, 0, 0.45) ; 
+    --red: hsla(0, 100%, 50%,0.45); 
+     
+   
+       
+   
+   }
+   .body{ 
+       
+       height: 100vh;
+       background: linear-gradient(130deg , var(--primary),var(--yellow)), url("resource/background2.jpg");    
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;  
+       
+       
+   } 
+   .body2{ 
+       
+       height: 100vh;
+       background: linear-gradient(130deg , var(--primary),var(--yellow)), url("resource/background2.jpg");    
+       background-attachment: fixed; 
+       overflow-y:auto; 
+       flex: 1;
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;  
+       
+       
+   }
+ 
+   
+   .logo{ 
+
+    background-image: url("resource/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
