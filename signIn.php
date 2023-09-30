@@ -28,7 +28,7 @@
 
 
                             <div class="col-12 ">
-                                <p class="title02">Admin Login.</p>
+                                <p class="title02">SIGN IN</p>
                             </div>
                             <hr />
                             <div class="col-12 ">
