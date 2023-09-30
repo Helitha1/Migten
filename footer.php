@@ -44,7 +44,7 @@
 
                     <h5 class="text-uppercase fw-bold text-white mb-4">Contact Us</h5>
                     
-                    <p class="text-white"><i class="bi bi-house-fill text-white"></i>256 / kandy</p>
+                    <p class="text-white"><i class="bi bi-house-fill text-white"></i>2E L Senanayake Veediya, Kandy 205</p>
                     <p class="text-white"><i class="bi bi-at text-white"></i> charitydonation@gmail.com</p>
                     
                         <p class="text-white"><i class="bi bi-telephone-fill text-white"></i>(+94)75 6985419</p>
