@@ -48,9 +48,22 @@
                                 <input type="email" class="form-control" placeholder="ex:- john@" id="e" />
                             </div>
 
-                            <div class="col-12 ">
+                            <div class="col-12 col-lg-6">
                                 <label class="form-label">Mobile</label>
                                 <input type="text" class="form-control" placeholder="ex:- john" id="m" />
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <label class="form-label fw-bold">Gender</label>
+                                <select class=" form-select " id="ge">
+
+                                    <option value="0">Male</option>
+                                    <option value="0">Feale</option>
+
+                                </select>
+
+
+
                             </div>
 
                             <div class="col-12 col-lg-6">
