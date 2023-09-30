@@ -35,21 +35,21 @@
                             </div>
                             <hr />
                             <div class="col-12 ">
-                                <label class="form-label">First Name </label>
+                                <label class="form-label fw-bold">First Name </label>
                                 <input type="text" class="form-control" placeholder="ex:- john" id="fn" />
                             </div>
 
                             <div class="col-12 ">
-                                <label class="form-label">Last Name</label>
+                                <label class="form-label fw-bold">Last Name</label>
                                 <input type="text" class="form-control" placeholder="ex:- john" id="ln" />
                             </div>
                             <div class="col-12 ">
-                                <label class="form-label">Email</label>
+                                <label class="form-label fw-bold">Email</label>
                                 <input type="email" class="form-control" placeholder="ex:- john@" id="e" />
                             </div>
 
                             <div class="col-12 col-lg-6">
-                                <label class="form-label">Mobile</label>
+                                <label class="form-label fw-bold">Mobile</label>
                                 <input type="text" class="form-control" placeholder="ex:- john" id="m" />
                             </div>
 
@@ -67,7 +67,7 @@
                             </div>
 
                             <div class="col-12 col-lg-6">
-                                <label class="form-label">Password</label>
+                                <label class="form-label fw-bold">Password</label>
                                 <div class="input-group">
                                     <input type="password" class="form-control" placeholder="ex:- ****" id="p1" />
                                     <span class="input-group-text btn btn-dark" id="basic-addon2">Show</span>
@@ -75,7 +75,7 @@
 
                             </div>
                             <div class="col-12 col-lg-6">
-                                <label class="form-label">Confirm Password</label>
+                                <label class="form-label fw-bold">Confirm Password</label>
                                 <div class="input-group">
                                     <input type="password" class="form-control" placeholder="ex:- ****" id="p2" />
                                     <span class="input-group-text btn btn-dark" id="basic-addon2">Show</span>
@@ -83,11 +83,11 @@
                             </div>
 
                             <div class="col-12 col-lg-6">
-                                <label class="form-label">Address Line 1</label>
+                                <label class="form-label fw-bold">Address Line 1</label>
                                 <input type="text" class="form-control" placeholder="ex:- john" id="al1" />
                             </div>
                             <div class="col-12 col-lg-6">
-                                <label class="form-label">Address Line 2</label>
+                                <label class="form-label fw-bold">Address Line 2</label>
                                 <input type="text" class="form-control" placeholder="ex:- john" id="al2" />
                             </div>
 
