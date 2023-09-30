@@ -106,7 +106,7 @@
                 </div>
                 
 
-                <hr style="background-color: #f13451;"/>
+                <hr class="fs-1" style="background-color: #f13451;"/>
 
             </div>
             <!-- <div class="col12
