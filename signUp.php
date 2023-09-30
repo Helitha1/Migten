@@ -32,8 +32,8 @@
                                         <input placeholder="Enter Firstname" type="text" class="form-control">
                                         <input placeholder="Enter Lastname" type="text" class="form-control">
                                         <input placeholder="Enter Mobile" type="text" class="form-control">
-                                        <input Placeholder="Enter PAssword" type="password" class="form-control">
-                                        <input Placeholder="Conferm PAssword" type="password" class="form-control">
+                                        <input Placeholder="Enter Password" type="password" class="form-control">
+                                        <input Placeholder="Conferm Password" type="password" class="form-control">
                                         <input placeholder="Enter Address Line 1" type="text" class="form-control">
                                         <input placeholder="Enter Address Line 2" type="text" class="form-control">
                                         <div class="row form-footer">
