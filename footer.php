@@ -24,7 +24,7 @@
                 <div class="col-12 col-md-3 col-lg-4 mx-auto ">
 
                     <h5 class="text-uppercase mt-4 fw-bold text-white text-uppercase">Charity Donation</h5>
-                    <p class="text-white text-center">Here we CharityDonation.lk&trade; Your donation can make a world of difference. Join us in our mission to change lives and create a brighter future for those in need.</p>
+                    <p class="text-white text-center">Here we CharityDonation.lk&trade; <br/>Your donation can make a world of difference. Join us in our mission to change lives and create a brighter future for those in need.</p>
 
                     <br/>
                     <br/>
@@ -45,9 +45,9 @@
                     <h5 class="text-uppercase fw-bold text-white mb-4">Contact Us</h5>
                     
                     <p class="text-white"><i class="bi bi-house-fill text-white"></i>256 / kandy</p>
-                    <p class="text-white"><i class="bi bi-at text-white"></i> info@gmail.com</p>
+                    <p class="text-white"><i class="bi bi-at text-white"></i> charitydonation@gmail.com</p>
                     
-                        <p class="text-white"><i class="bi bi-telephone-fill text-white"></i>0756985419</p>
+                        <p class="text-white"><i class="bi bi-telephone-fill text-white"></i>(+94)75 6985419</p>
                     
 
                     <hr class="text-white"/>
