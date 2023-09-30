@@ -11,12 +11,14 @@
     
     <title>Sign In</title> 
     
-<div> 
-     
-      
+ <div class="container-fluid bg-signIn "> 
+    <div class="container"> 
+        
+    
 
+    </div>
 
-</div>
+ </div>
 </head>
 <body> 
     
