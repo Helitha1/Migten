@@ -122,7 +122,7 @@
         <!-- content  -->
 
 
-        <!--  -->
+        <!-- model1 -->
 
         <div class="modal" tabindex="-1" id="verificationModal">
             <div class="modal-dialog">
@@ -143,11 +143,11 @@
             </div>
         </div>
 
-        <!--  -->
+        <!-- model1 -->
 
     </div>
 
-    <!-- modal -->
+    <!-- modal2 -->
 
     <div class="modal" tabindex="-1" id="forgotPasswordModal">
         <div class="modal-dialog">
@@ -192,7 +192,7 @@
         </div>
     </div>
 
-    <!-- modal -->
+    <!-- modal2 -->
 
 
 
