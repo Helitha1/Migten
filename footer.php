@@ -24,7 +24,7 @@
                 <div class="col-12 col-md-3 col-lg-4 mx-auto ">
 
                     <h5 class="text-uppercase mt-4 fw-bold text-black-50 text-uppercase">Charity Donation</h5>
-                    <p class="text-black">Here we CharityDonation.lk&trade;</p>
+                    <p class="text-black">Here we CharityDonation.lk&trade; Your donation can make a world of difference. Join us in our mission to change lives and create a brighter future for those in need.</p>
 
                     <br/>
                     <br/>
