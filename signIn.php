@@ -7,7 +7,7 @@
     <title>Admin Login | E Learning</title>
     <link rel="stylesheet" href="bootstrap.css"/> 
     <link rel="stylesheet" href="style.css"/>  
-    <link rel="icon" href="resource/learning.png"/>
+    <link rel="icon" href="resource/logo.png"/>
 </head>
 <body class="body">
      
