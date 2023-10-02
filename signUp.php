@@ -36,26 +36,26 @@
                             <hr />
                             <div class="col-12 ">
                                 <label class="form-label fw-bold">First Name </label>
-                                <input type="text" class="form-control" placeholder="ex:- john" id="fn" />
+                                <input type="text" class="form-control" placeholder="ex:- john" id="fname" />
                             </div>
 
                             <div class="col-12 ">
                                 <label class="form-label fw-bold">Last Name</label>
-                                <input type="text" class="form-control" placeholder="ex:- john" id="ln" />
+                                <input type="text" class="form-control" placeholder="ex:- john" id="lname" />
                             </div>
                             <div class="col-12 ">
                                 <label class="form-label fw-bold">Email</label>
-                                <input type="email" class="form-control" placeholder="ex:- john@" id="e" />
+                                <input type="email" class="form-control" placeholder="ex:- john@" id="email" />
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <label class="form-label fw-bold">Mobile</label>
-                                <input type="text" class="form-control" placeholder="ex:- john" id="m" />
+                                <input type="text" class="form-control" placeholder="ex:- john" id="mobile" />
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <label class="form-label fw-bold">Gender</label>
-                                <select class=" form-select " id="ge">
+                                <select class=" form-select " id="gender">
 
                                     <option value="0">Male</option>
                                     <option value="0">Feale</option>
@@ -69,7 +69,7 @@
                             <div class="col-12 col-lg-6">
                                 <label class="form-label fw-bold">Password</label>
                                 <div class="input-group">
-                                    <input type="password" class="form-control" placeholder="ex:- ****" id="p1" />
+                                    <input type="password" class="form-control" placeholder="ex:- ****" id="password" />
                                     <span class="input-group-text btn btn-dark" id="basic-addon2">Show</span>
                                 </div>
 
@@ -77,18 +77,18 @@
                             <div class="col-12 col-lg-6">
                                 <label class="form-label fw-bold">Confirm Password</label>
                                 <div class="input-group">
-                                    <input type="password" class="form-control" placeholder="ex:- ****" id="p2" />
+                                    <input type="password" class="form-control" placeholder="ex:- ****" id="password2" />
                                     <span class="input-group-text btn btn-dark" id="basic-addon2">Show</span>
                                 </div>
                             </div>
 
                             <div class="col-12 col-lg-6">
                                 <label class="form-label fw-bold">Address Line 1</label>
-                                <input type="text" class="form-control" placeholder="ex:- john" id="al1" />
+                                <input type="text" class="form-control" placeholder="ex:- john" id="line1" />
                             </div>
                             <div class="col-12 col-lg-6">
                                 <label class="form-label fw-bold">Address Line 2</label>
-                                <input type="text" class="form-control" placeholder="ex:- john" id="al2" />
+                                <input type="text" class="form-control" placeholder="ex:- john" id="line2" />
                             </div>
 
                             <!-- <div class="col-6">
