@@ -4,7 +4,7 @@ require "connection.php";
 
 $uid = $_POST["userId"];
 $password = $_POST["password"];
-$rememberme = $_POST["yes"];
+$rememberme = $_POST["remember"];
 
 if (empty($uid)) {
     echo ("Please enter your National Id Card Number");
@@ -18,7 +18,7 @@ if (empty($uid)) {
 
     if ($n == 1){
 
-        echo ("success");
+        echo ("1");
         $d = $rs->fetch_assoc();
         $_SESSION["user"] = $d;
 
@@ -30,6 +30,6 @@ if (empty($uid)) {
             setcookie("password", "", -1);
         }
     } else {
-        echo ("Invalid Id card or Password");
+        echo ("2");
     }
 }
