@@ -33,13 +33,13 @@
                             <hr />
                             <div class="col-12 ">
                                 <label class="form-label fw-bold">Email</label>
-                                <input type="email" class="form-control" placeholder="ex:- john@gmail.com" id="e" />
+                                <input type="email" class="form-control" placeholder="ex:- john@gmail.com" id="email" />
                             </div>
 
                             <div class="col-12 ">
                                 <label class="form-label fw-bold">Password</label>
                                 <div class="input-group">
-                                    <input type="password" class="form-control fw-bold" placeholder="ex:- ****" id="p" />
+                                    <input type="password" class="form-control fw-bold" placeholder="ex:- ****" id="password" />
                                     <span class="input-group-text btn btn-dark" id="basic-addon2">Show</span>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                                 <a href="#" class="link-dark fw-bold" onclick="forgotPassword();">Forgot Password?</a>
                             </div>
                             <div class="col-12 col-lg-6 d-grid my-3">
-                                <button class="btn text-white"  style="background-color: #543c4f;">Sign In</button>
+                                <button class="btn text-white"  style="background-color: #543c4f;" onclick="signIn();">Sign In</button>
                             </div>
                             <div class="col-12 col-lg-6 d-grid my-3">
                                 <button class="btn text-white" style="background-color: #f13451;" onclick="window.location = 'SignUp.php'">if you are new to this! Sign Up</button>
