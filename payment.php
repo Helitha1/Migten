@@ -43,16 +43,16 @@
                     </div>
                     <div class="col-12 row mb-3">
                         <label for="" class="form-label">Donation Type</label>
-                       <div class="col-12 p-2">
-                       <div class="form-check">
-                            <input class="form-check-input" type="radio" name="donation-type" id="type01" value="type01" checked>
-                            <label class="form-check-label" for="type01">One time Donation</label>
+                        <div class="col-12 p-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="donation-type" id="type01" value="type01" checked>
+                                <label class="form-check-label" for="type01">One time Donation</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="donation-type" id="type02" value="type02">
+                                <label class="form-check-label" for="type02">Recurring Donations</label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="donation-type" id="type02" value="type02">
-                            <label class="form-check-label" for="type02">Recurring Donations</label>
-                        </div>
-                       </div>
                     </div>
                     <div class="col-12 col-md-9 col-lg-6">
                         <div class="d-grid gap-2">
@@ -64,6 +64,11 @@
             </div>
         </div>
     </div>
+
+    <script>
+        
+    </script>
+
 </body>
 
 </html>
