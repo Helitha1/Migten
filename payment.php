@@ -26,15 +26,15 @@
                     </div>
                     <div class="col-12 col-lg-6  row mb-3">
                         <label for="" class="form-label">Email Address</label>
-                        <input type="email" id="donation-name" class="form-control">
+                        <input type="email" id="donation-email" class="form-control">
                     </div>
                     <div class="col-12  col-lg-6 row mb-3">
                         <label for="" class="form-label">Mobile Number</label>
-                        <input type="email" id="donation-name" class="form-control">
+                        <input type="email" id="donation-mobile" class="form-control">
                     </div>
                     <div class="col-12 row mb-3">
                         <label for="" class="form-label">Comments</label>
-                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" id="donation-comment" class="form-control"></textarea>
                     </div>
 
                     <div class="col-12 row mb-3">
@@ -66,7 +66,16 @@
     </div>
 
     <script>
-        
+        _ = (element) => {
+            return document.getElementById(element);
+        }
+        continuePayment = () => {
+            const name = _('donation-name');
+            const email = _('donation-email');
+            const mobile = _('donation-mobile');
+            const comment = _('donation-comment');
+            const donationType = _('type01').checkd == true ? '1' : '2';
+        }
     </script>
 
 </body>
