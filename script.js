@@ -1,3 +1,5 @@
+
+
 function signUp() {
 
     var f = document.getElementById("fname");
@@ -6,9 +8,11 @@ function signUp() {
     var p = document.getElementById("password");
     var p2 = document.getElementById("password2");
     var m = document.getElementById("mobile");
-    var g = document.getElementById("gender");
+    var g = document.getElementById("gender").value;
     var l1 = document.getElementById("line1");
     var l2 = document.getElementById("line2");
+
+    // console.log(g.value);
 
     var form = new FormData;
     form.append("fname", f.value);
@@ -17,18 +21,19 @@ function signUp() {
     form.append("password", p.value);
     form.append("password2", p2.value);
     form.append("mobile", m.value);
-    form.append("gender", g.value);
+    form.append("gender", g);
     form.append("addressLine1", l1.value);
-    form.append("addressLine1", l2.value);
+    form.append("addressLine2", l2.value);
 
     var request = new XMLHttpRequest();
 
     request.onreadystatechange = function () {
         if (request.readyState == 4) {
             var text = request.responseText;
+            (text);
             if (text == "1") {
                 // alert("Done!");
-                window.location = "home.php";
+                window.location = "signIn.php";
             } else if(text == "2") {
                 alert("User with same email already exist!");
             }
@@ -56,6 +61,7 @@ function signIn() {
     r.onreadystatechange = function () {
         if (r.readyState == 4) {
             var t = r.responseText;
+            // alert(t);
             if (t == "1") {
                 window.location = "home.php";
             } else if(t == "2") {
