@@ -39,7 +39,7 @@ if(empty($fname)){
     $n = $rs->num_rows;
     
     if($n > 0){
-        echo ("User with the same Email already exists.");
+        echo ("2");
     }else{
     
         $d = new DateTime();
@@ -51,7 +51,7 @@ if(empty($fname)){
         (`fname`,`lname`,`email`,`mobile`,`,line1`,`line2`,`password`,`gender_id`,`register_date`,) VALUES 
         ('".$fname."','".$lname."','".$email."','".$mobile."','".$addressLine1."','".$addressLine2."','".$password."','".$gender."','".$date."')");
     
-        echo "success";
+        echo "1";
     
     }
 }
