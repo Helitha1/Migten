@@ -97,6 +97,13 @@
             }else if(donationAmount < 300000){
                 showError('Cant made dontaions above 300K please contact our admin');
             }else{
+                const requestObject = {
+                    'name':name,
+                    'email':email,
+                    'mobile':mobile,
+                    'donationType':donationType,
+                    'donationAmount':donationAmount
+                }
                 
             }
         }
