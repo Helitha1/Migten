@@ -20,10 +20,8 @@
             </div>
             <div class="col-12 col-md-9 col-lg-6 mx-auto mt-4 border border-1 p-4 rounded-3 bg-light bg-opacity-50">
                 <div class="row justify-content-around">
-                    <div class="col-12">
-                        <h6 class="text text-danger" id="form-warning">
-
-                        </h6>
+                    <div class="col-12 mb-3">
+                        <h5 class="text text-danger d-none border border-danger p-2" id="form-warning"> </h5>
                     </div>
                     <div class="col-12 row mb-3 input-group has-validation">
                         <label for="" class="form-label">Full Name or Organization Name</label>
@@ -76,9 +74,7 @@
             return document.getElementById(element);
         }
 
-
         continuePayment = () => {
-            // alert('done');
             const name = _('donation-name').value;
             const email = _('donation-email').value;
             const mobile = _('donation-mobile').value;
@@ -87,20 +83,26 @@
             const donationAmount = _('donation-amount').value;
 
             if (name == '') {
-                // showError('Please Enter Your name');
-                _('feedback-name').innerHTML = 'Name is required';
+                showError('Please Enter Your name');
             } else if (email == '') {
-
+                showError('Please Enter Your Email');
             } else if (mobile == '') {
-
+                showError('Mobile Number is Required');
             } else if (donationType == '') {
-
+                showError('Please choose a Donation Type');
             } else if (donationAmount == '') {
-
+                showError('Please Enter the Donation Amount');
+            }else if(donationAmount>0){
+                showError('Invalid Amount')
+            }else if(donationAmount < 300000){
+                showError('Cant made dontaions above 300K please contact our admin');
+            }else{
+                
             }
         }
 
         showError = (errorMsg) => {
+            _('form-warning').classList.remove('d-none');
             _('form-warning').innerHTML = errorMsg;
         }
 
