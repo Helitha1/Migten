@@ -41,6 +41,14 @@
     background-position: center;
     background-repeat: no-repeat;
 } 
+  
+.logo2{ 
+
+    background-image: url("resource/logo2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
  
 
 @font-face {

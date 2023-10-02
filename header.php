@@ -10,7 +10,7 @@
     
 </head>
 <body>
-<section id="topbar" class="d-flex align-items-center section " >
+<section id="topbar" class="d-flex align-items-center  " style="background-color:#543c4f; height: 30px;">
         <div class="container d-flex justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope d-flex align-items-center text-white "><a  href="charitydonation@gmail.com" class="text-white  mx-2">charitydonation@gmail.com</a></i>
@@ -23,7 +23,8 @@
                 <a href="#" class="linkedin  text-white mx-2"><i class="bi bi-linkedin"></i></i></a>
             </div>
         </div>
-    </section>     
+    </section>      
+
 
 </body>
 </html>
