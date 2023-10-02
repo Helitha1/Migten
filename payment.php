@@ -20,9 +20,13 @@
             </div>
             <div class="col-12 col-md-9 col-lg-6 mx-auto mt-4 border border-1 p-4 rounded-3 bg-light bg-opacity-50">
                 <div class="row justify-content-around">
-                    <div class="col-12 row mb-3">
+                    <div class="col-12 mb-3">
+                        <h5 class="text text-danger d-none border border-danger p-2" id="form-warning"> </h5>
+                    </div>
+                    <div class="col-12 row mb-3 input-group has-validation">
                         <label for="" class="form-label">Full Name or Organization Name</label>
                         <input type="text" id="donation-name" class="form-control">
+                        <div class="invalid-feedback" id="feedback-name"> </div>
                     </div>
                     <div class="col-12 col-lg-6  row mb-3">
                         <label for="" class="form-label">Email Address</label>
@@ -39,7 +43,7 @@
 
                     <div class="col-12 row mb-3">
                         <label for="" class="form-label">Donation Amount</label>
-                        <input type="email" id="donation-name" class="form-control">
+                        <input type="email" id="donation-amount" class="form-control">
                     </div>
                     <div class="col-12 row mb-3">
                         <label for="" class="form-label">Donation Type</label>
@@ -56,7 +60,7 @@
                     </div>
                     <div class="col-12 col-md-9 col-lg-6">
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary">Pay via Debit/Credit Card</button>
+                            <button class="btn btn-primary" id="payment-button">Pay via Debit/Credit Card</button>
                             <button class="btn btn-disabled" disabled>Pay via Crypto</button>
                         </div>
                     </div>
@@ -64,18 +68,52 @@
             </div>
         </div>
     </div>
-
+    <script src="bootstrap.bundle.min.js"></script>
     <script>
         _ = (element) => {
             return document.getElementById(element);
         }
+
         continuePayment = () => {
-            const name = _('donation-name');
-            const email = _('donation-email');
-            const mobile = _('donation-mobile');
-            const comment = _('donation-comment');
+            const name = _('donation-name').value;
+            const email = _('donation-email').value;
+            const mobile = _('donation-mobile').value;
+            // const comment = _('donation-comment').innerHTML;
             const donationType = _('type01').checkd == true ? '1' : '2';
+            const donationAmount = _('donation-amount').value;
+
+            if (name == '') {
+                showError('Please Enter Your name');
+            } else if (email == '') {
+                showError('Please Enter Your Email');
+            } else if (mobile == '') {
+                showError('Mobile Number is Required');
+            } else if (donationType == '') {
+                showError('Please choose a Donation Type');
+            } else if (donationAmount == '') {
+                showError('Please Enter the Donation Amount');
+            }else if(donationAmount>0){
+                showError('Invalid Amount')
+            }else if(donationAmount < 300000){
+                showError('Cant made dontaions above 300K please contact our admin');
+            }else{
+                const requestObject = {
+                    'name':name,
+                    'email':email,
+                    'mobile':mobile,
+                    'donationType':donationType,
+                    'donationAmount':donationAmount
+                }
+                
+            }
         }
+
+        showError = (errorMsg) => {
+            _('form-warning').classList.remove('d-none');
+            _('form-warning').innerHTML = errorMsg;
+        }
+
+        _('payment-button').addEventListener('click', continuePayment);
     </script>
 
 </body>
