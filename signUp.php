@@ -56,10 +56,8 @@
                             <div class="col-12 col-lg-6">
                                 <label class="form-label fw-bold">Gender</label>
                                 <select class=" form-select " id="gender">
-
                                     <option value="0">Male</option>
-                                    <option value="0">Feale</option>
-
+                                    <option value="1">Female</option>
                                 </select>
 
 
