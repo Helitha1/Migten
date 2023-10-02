@@ -92,19 +92,27 @@
                 showError('Please choose a Donation Type');
             } else if (donationAmount == '') {
                 showError('Please Enter the Donation Amount');
-            }else if(donationAmount>0){
+            } else if (donationAmount > 0) {
                 showError('Invalid Amount')
-            }else if(donationAmount < 300000){
+            } else if (donationAmount < 300000) {
                 showError('Cant made dontaions above 300K please contact our admin');
-            }else{
+            } else {
                 const requestObject = {
-                    'name':name,
-                    'email':email,
-                    'mobile':mobile,
-                    'donationType':donationType,
-                    'donationAmount':donationAmount
+                    'name': name,
+                    'email': email,
+                    'mobile': mobile,
+                    'donationType': donationType,
+                    'donationAmount': donationAmount
                 }
-                
+                fetch('paymentProcess.php', {
+                    method: 'POST',
+                    body: JSON.stringify(requestObject),
+                    headers: 'application-type:json'
+                }).then(
+                    res => {
+                        console.log(res.json());
+                    }
+                ).catch(err => alert(err))
             }
         }
 
