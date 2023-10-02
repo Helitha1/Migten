@@ -8,9 +8,10 @@ $email = $_POST["email"];
 $mobile = $_POST["mobile"];
 $addressLine1 = $_POST["addressLine1"];
 $addressLine2 = $_POST["addressLine2"];
-$gender = $_POST["genderId"];
+$gender = $_POST["gender"];
 $password = $_POST["password"];
 $password2 = $_POST["password2"];
+
 
 if(empty($fname)){
     echo ("Please enter your First Name !!!");
@@ -48,7 +49,7 @@ if(empty($fname)){
         $date = $d->format("Y-m-d H:i:s");
     
         Database::iud("INSERT INTO `users` 
-        (`fname`,`lname`,`email`,`mobile`,`,line1`,`line2`,`password`,`gender_id`,`register_date`,) VALUES 
+        (`fname`,`lname`,`email`,`mobile`,`line1`,`line2`,`password`,`gender_id`,`register_date`) VALUES 
         ('".$fname."','".$lname."','".$email."','".$mobile."','".$addressLine1."','".$addressLine2."','".$password."','".$gender."','".$date."')");
     
         echo "1";
