@@ -73,6 +73,11 @@
  
 }   
 
-
+.payment-body{
+    background-image: url('resource/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
  
