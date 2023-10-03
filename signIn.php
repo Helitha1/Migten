@@ -91,7 +91,7 @@
                             <div class="col-6">
                                 <label class="form-label">New Password</label>
                                 <div class="input-group mb-3">
-                                    <input type="password" class="form-control" id="np" />
+                                    <input type="password" class="form-control" id="p1" />
                                     <button class="btn btn-outline-secondary" type="button" id="npb" onclick="showPassword();">Show</button>
                                 </div>
                             </div>
@@ -99,14 +99,14 @@
                             <div class="col-6">
                                 <label class="form-label">Re-type Password</label>
                                 <div class="input-group mb-3">
-                                    <input type="password" class="form-control" id="rnp" />
+                                    <input type="password" class="form-control" id="p2" />
                                     <button class="btn btn-outline-secondary" type="button" id="rnpb" onclick="showPassword2();">Show</button>
                                 </div>
                             </div>
 
                             <div class="col-12">
                                 <label class="form-label">Verification Code</label>
-                                <input type="text" class="form-control" id="vc" />
+                                <input type="text" class="form-control" id="c" />
                             </div>
 
                         </div>
@@ -129,7 +129,7 @@
 
     </div>
 
-    <script src="bootstrap.bundle.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
