@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-12  col-lg-6 row mb-3">
                         <label for="" class="form-label">Mobile Number</label>
-                        <input type="email" id="donation-mobile" class="form-control">
+                        <input type="text" id="donation-mobile" class="form-control">
                     </div>
                     <div class="col-12 row mb-3">
                         <label for="" class="form-label">Comments</label>
@@ -69,6 +69,7 @@
         </div>
     </div>
     <script src="bootstrap.bundle.min.js"></script>
+    <!-- <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script> -->
     <script>
         _ = (element) => {
             return document.getElementById(element);
@@ -92,9 +93,9 @@
                 showError('Please choose a Donation Type');
             } else if (donationAmount == '') {
                 showError('Please Enter the Donation Amount');
-            } else if (donationAmount > 0) {
+            } else if (donationAmount < 0) {
                 showError('Invalid Amount')
-            } else if (donationAmount < 300000) {
+            } else if (donationAmount > 300000) {
                 showError('Cant made dontaions above 300K please contact our admin');
             } else {
                 const requestObject = {
@@ -107,12 +108,12 @@
                 fetch('paymentProcess.php', {
                     method: 'POST',
                     body: JSON.stringify(requestObject),
-                    headers: 'application-type:json'
-                }).then(
-                    res => {
-                        console.log(res.json());
+                    headers: {
+                        "Content-Type": "application/json",
                     }
-                ).catch(err => alert(err))
+                }).then(res => res.json()).then(resObj => {
+                    console.log(resObj);
+                }).catch(err => alert(err))
             }
         }
 
@@ -123,8 +124,6 @@
 
         _('payment-button').addEventListener('click', continuePayment);
     </script>
- 
- <?php include("footer.php") ?>
 
 </body>
 
