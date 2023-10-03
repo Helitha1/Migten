@@ -1,6 +1,4 @@
 <?php
-
-
 class Payment
 {
     private $merchant_id = 1222780;

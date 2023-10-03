@@ -103,7 +103,7 @@
                     'email': email,
                     'mobile': mobile,
                     'donationType': donationType,
-                    'donationAmount': donationAmount
+                    'amount': donationAmount
                 }
                 fetch('paymentProcess.php', {
                     method: 'POST',
@@ -113,6 +113,7 @@
                     }
                 }).then(res => res.json()).then(resObj => {
                     console.log(resObj);
+                    
                 }).catch(err => alert(err))
             }
         }
