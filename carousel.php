@@ -20,7 +20,7 @@
                     <div class="carousel-item active">
                         <img src="<?php echo ($banner["img"]) ?>" class="d-block w-100" />
                         <div class="carousel-caption d-none d-md-block">
-                            <h5 class="text-danger"><?php echo ($banner["title"]) ?></h5>
+                            <h5 class="text-<?php echo(($banner["btnClr"])) ?>"><?php echo ($banner["title"]) ?></h5>
                             <button class="btn btn-<?php echo(($banner["btnClr"])) ?>"><?php echo ($banner["btnTitle"]) ?></button>
                         </div>
                     </div>
