@@ -1,9 +1,9 @@
 <body>
     <?php
     $banner_array = array();
-    array_push($banner_array, ["img" => "./res/banner1.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => ""]);
-    array_push($banner_array, ["img" => "./res/banner2.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => ""]);
-    array_push($banner_array, ["img" => "./res/banner3.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => ""]);
+    array_push($banner_array, ["img" => "./res/banner1.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"primary"]);
+    array_push($banner_array, ["img" => "./res/banner2.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"Success"]);
+    array_push($banner_array, ["img" => "./res/banner3.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"Danger"]);
     ?>
     <!-- CAROUSEL -->
     <div class="v-100 d-flex justify-content-center" style="background-color: #eeeff3">
@@ -21,7 +21,7 @@
                         <img src="<?php echo ($banner["img"]) ?>" class="d-block w-100" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="text-danger"><?php echo ($banner["title"]) ?></h5>
-                            <button class="btn btn-danger"><?php echo ($banner["btnTitle"]) ?></button>
+                            <button class="btn btn-<?php echo(($banner["btnClr"])) ?>"><?php echo ($banner["btnTitle"]) ?></button>
                         </div>
                     </div>
                 <?php
