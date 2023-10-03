@@ -17,7 +17,7 @@
 
     <footer class="text-white pb-2 pt-2" style="background-color: #543c4f;">
 
-        <div class="col-12 text-md-start">
+        <div class="col-11 text-md-start">
 
             <div class="row text-sm-center text-md-start">
 
@@ -106,7 +106,7 @@
                 </div>
                 
 
-                <hr style="background-color: #f13451; height: 10px;"/>
+                <!-- <hr style="background-color: #f13451; height: 10px;" /> -->
 
             </div>
             <!-- <div class="col12
