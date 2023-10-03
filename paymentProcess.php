@@ -42,7 +42,7 @@ if (!isset($json->name)) {
     // CREATE NEW PAYMENT CLASS
     $payment = new Payment($json->amount, $json->name, $json->email, $json->mobile, $json->donationType);
     // GET PAYMENT HASHCODE
-    $responseObject->paymentHashCpde = $payment->generateHash();
+    // $responseObject->paymentHashCpde = $payment->generateHash();
     // GET PAYMENT OBJECT
     $responseObject->paymentObject = $payment->generatePaymentObject();
 }
