@@ -13,7 +13,10 @@
 </head>
 
 <body>
+<div class="col-12 container-fluid">
+    <div class="row">
 
+    
     <!-- NAVIGATION -->
     <div class="navigation-container">
 
@@ -67,6 +70,8 @@
         </div>
 
     </div>
+    </div>
+</div>
 </body>
 
 </html>
