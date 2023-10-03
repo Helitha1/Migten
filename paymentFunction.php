@@ -3,13 +3,13 @@
 
 class Payment
 {
-    private $merchant_id="";
-    private $merchant_secret="";
+    private $merchant_id = 1222780;
+    private $merchant_secret = "MTY4MzQ3NzU1MjE5NDYwNzM3NDMxMjY5ODI1ODUzMzcwMTM2MzkyNg==";
     public $order_id = "ff";
-    public $amount, $email, $type,$mobile,$name;
+    public $amount, $email, $type, $mobile, $name;
 
     public  $currency = "LKR";
-    private function __construct($amount, $name, $email, $mobile,$type)
+    private function __construct($amount, $name, $email, $mobile, $type)
     {
         $this->amount = $amount;
         $this->name = $name;
@@ -27,7 +27,8 @@ class Payment
         );
     }
 
-    public function generatePaymentObject(){
+    public function generatePaymentObject()
+    {
         $paymentObject = new stdClass();
         $paymentObject->merchant_id = $this->merchant_id;
         $paymentObject->return_url = "index.php";
