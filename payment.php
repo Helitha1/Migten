@@ -123,6 +123,8 @@
 
         _('payment-button').addEventListener('click', continuePayment);
     </script>
+ 
+ <?php include("footer.php") ?>
 
 </body>
 
