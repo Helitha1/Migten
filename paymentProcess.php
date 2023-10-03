@@ -42,7 +42,9 @@ if (!isset($json->name)) {
     // CREATE NEW PAYMENT CLASS
     $payment = new Payment($json->amount, $json->name, $json->email, $json->mobile, $json->donationType);
     // GET PAYMENT OBJECT
-    $responseObject->paymentObject = $payment->generatePaymentObject();
+    $response_object->paymentObject = $payment->generatePaymentObject();
+    // SUCCESS CODE
+    $code = 100;
 }
 // ASSIGN RESPONSE CODE TO RESPONSE OBJECT
 $response_object->code = $code;

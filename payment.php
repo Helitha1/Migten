@@ -69,7 +69,7 @@
         </div>
     </div>
     <script src="bootstrap.bundle.min.js"></script>
-    <!-- <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script> -->
+    <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
     <script>
         _ = (element) => {
             return document.getElementById(element);
@@ -112,8 +112,12 @@
                         "Content-Type": "application/json",
                     }
                 }).then(res => res.json()).then(resObj => {
-                    console.log(resObj);
-                    
+                    if (resObj.code == 100) {
+                        console.log(resObj.paymentObject);
+                        payhere.startPayment(resObj.paymentObject);
+                    } else {
+                        alert(resObj.code);
+                    }
                 }).catch(err => alert(err))
             }
         }
@@ -124,6 +128,12 @@
         }
 
         _('payment-button').addEventListener('click', continuePayment);
+
+
+        payhere.onError = function onError(error) {
+            // Note: show an error page
+            console.log("Error:" + error);
+        };
     </script>
 
 </body>
