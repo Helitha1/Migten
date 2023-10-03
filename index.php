@@ -262,12 +262,17 @@ $future = $object->future;
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MIGTEN ACADEMY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="icon" type="image/png" href="resource/logo.png" />
+    <title>Home | Charity Donation</title>
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0"> 
+         
+        <?php
+        include("header.php");
+        ?>
 
         <?php
         include("header2.php");
@@ -325,7 +330,8 @@ $future = $object->future;
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-lg-6 py-3 mx-auto">
                         <p class="text-center">
-                            Welcome to MIGTEN E-learning platform, where the world of programming and web development comes to life! We are a newly launched platform dedicated to empowering learners of all levels on their coding journey. Whether you're a beginner taking your first steps into the world of programming or an experienced developer looking to enhance your skills, we've got you covered.
+                        Welcome to our Charity Donation Platform, where compassion meets action! At our core, we believe in the power of collective kindness to make a difference in the world.
+Our platform is more than just a space for transactions; it's a vibrant community united by the common goal of creating positive change. On this About page, we invite you to delve into the heart of who we are and what drives us.
                         </p>
                     </div>
                 </div>
