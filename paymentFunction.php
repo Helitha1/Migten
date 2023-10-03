@@ -28,6 +28,8 @@ class Payment
     }
 
     public function generatePaymentObject(){
-        
+        $paymentObject = new stdClass();
+        $paymentObject->merchant_id = $this->merchant_id;
+        $paymentObject->return_url = $this->marchant_id;
     }
 }
