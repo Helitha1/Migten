@@ -61,7 +61,7 @@
                     <div class="col-12 col-md-9 col-lg-6">
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary" id="payment-button">Pay via Debit/Credit Card</button>
-                            <button class="btn btn-disabled" disabled>Pay via Crypto</button>
+                            <button class="btn btn-secondary" id="payhere-payment">Pay via Crypto</button>
                         </div>
                     </div>
                 </div>
@@ -128,6 +128,27 @@
         }
 
         _('payment-button').addEventListener('click', continuePayment);
+
+        let payment = {
+            "merchant_id": 1222780,
+            "return_url": "index.php",
+            "cancel_url": "sorry.php",
+            "first_name": "d",
+            "last_name": "",
+            "email": "yasogaran@gmali.com",
+            "phone": "0789382132",
+            "address": "d",
+            "city": "NULL",
+            "country": "Sri Lanka",
+            "order_id": "ff",
+            "items": "ff",
+            "currency": "LKR",
+            "amount": "5866",
+            "hash": "014C117D9EAADF4844B028E58F223BB7",
+        }
+        document.getElementById('payhere-payment').onclick = function(e) {
+            payhere.startPayment(payment);
+        };
 
 
         payhere.onError = function onError(error) {
