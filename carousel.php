@@ -2,8 +2,8 @@
     <?php
     $banner_array = array();
     array_push($banner_array, ["img" => "./res/banner1.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"primary"]);
-    array_push($banner_array, ["img" => "./res/banner2.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"Success"]);
-    array_push($banner_array, ["img" => "./res/banner3.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"Danger"]);
+    array_push($banner_array, ["img" => "./res/banner2.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"success"]);
+    array_push($banner_array, ["img" => "./res/banner3.jpg", "title" => "Donate with us", "btnTitle" => "Donate", "btnRef" => "","btnClr"=>"danger"]);
     ?>
     <!-- CAROUSEL -->
     <div class="v-100 d-flex justify-content-center" style="background-color: #eeeff3">
