@@ -1,6 +1,4 @@
 <?php
-
-
 class Payment
 {
     private $merchant_id = 1222780;
@@ -9,7 +7,7 @@ class Payment
     public $amount, $email, $type, $mobile, $name;
 
     public  $currency = "LKR";
-    private function __construct($amount, $name, $email, $mobile, $type)
+    public function __construct($amount, $name, $email, $mobile, $type)
     {
         $this->amount = $amount;
         $this->name = $name;
@@ -45,5 +43,7 @@ class Payment
         $paymentObject->currency = "LKR";
         $paymentObject->amount = $this->amount;
         $paymentObject->hash = $this->generateHash();
+
+        return $paymentObject;
     }
 }

@@ -10,12 +10,12 @@ $data = file_get_contents("php://input");
 // GET REQUEST JSON
 $json = json_decode($data);
 // REGULAR EXPRESSION FOR MOBILE AND EMAIL VALIDATION
-$email_regex = "";
-$mobile_regex = "";
+$email_regex = '/^\\S+@\\S+\\.\\S+$/';
+$mobile_regex = '/^7|0|(?:\+94)[0-9]{9,10}$/';
 // CHECK VALUES ARE AVAILABE
 if (!isset($json->name)) {
     $code = 20; //NAME IS NOT SET
-} else if (isset($json->email)) {
+} else if (!isset($json->email)) {
     $code = 21; // EMAil IS NOT SET
 } else if (!isset($json->mobile)) {
     $code = 22; //MOBILE IS NOT SET
@@ -41,10 +41,10 @@ if (!isset($json->name)) {
     // ALLOW TO PAYMENT
     // CREATE NEW PAYMENT CLASS
     $payment = new Payment($json->amount, $json->name, $json->email, $json->mobile, $json->donationType);
-    // GET PAYMENT HASHCODE
-    // $responseObject->paymentHashCpde = $payment->generateHash();
     // GET PAYMENT OBJECT
-    $responseObject->paymentObject = $payment->generatePaymentObject();
+    $response_object->paymentObject = $payment->generatePaymentObject();
+    // SUCCESS CODE
+    $code = 100;
 }
 // ASSIGN RESPONSE CODE TO RESPONSE OBJECT
 $response_object->code = $code;

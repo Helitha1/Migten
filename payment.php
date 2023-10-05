@@ -61,7 +61,7 @@
                     <div class="col-12 col-md-9 col-lg-6">
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary" id="payment-button">Pay via Debit/Credit Card</button>
-                            <button class="btn btn-disabled" disabled>Pay via Crypto</button>
+                            <button class="btn btn-secondary" id="payhere-payment">Pay via Crypto</button>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
         </div>
     </div>
     <script src="bootstrap.bundle.min.js"></script>
-    <!-- <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script> -->
+    <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
     <script>
         _ = (element) => {
             return document.getElementById(element);
@@ -103,7 +103,7 @@
                     'email': email,
                     'mobile': mobile,
                     'donationType': donationType,
-                    'donationAmount': donationAmount
+                    'amount': donationAmount
                 }
                 fetch('paymentProcess.php', {
                     method: 'POST',
@@ -112,7 +112,12 @@
                         "Content-Type": "application/json",
                     }
                 }).then(res => res.json()).then(resObj => {
-                    console.log(resObj);
+                    if (resObj.code == 100) {
+                        console.log(resObj.paymentObject);
+                        payhere.startPayment(resObj.paymentObject);
+                    } else {
+                        alert(resObj.code);
+                    }
                 }).catch(err => alert(err))
             }
         }
@@ -123,6 +128,33 @@
         }
 
         _('payment-button').addEventListener('click', continuePayment);
+
+        let payment = {
+            "merchant_id": 1222780,
+            "return_url": "index.php",
+            "cancel_url": "sorry.php",
+            "first_name": "d",
+            "last_name": "",
+            "email": "yasogaran@gmali.com",
+            "phone": "0789382132",
+            "address": "d",
+            "city": "NULL",
+            "country": "Sri Lanka",
+            "order_id": "ff",
+            "items": "ff",
+            "currency": "LKR",
+            "amount": "5866",
+            "hash": "014C117D9EAADF4844B028E58F223BB7",
+        }
+        document.getElementById('payhere-payment').onclick = function(e) {
+            payhere.startPayment(payment);
+        };
+
+
+        payhere.onError = function onError(error) {
+            // Note: show an error page
+            console.log("Error:" + error);
+        };
     </script>
 
 </body>
